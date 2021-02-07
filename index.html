@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Checker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body id="background" class="bg-dark">       
+        <main>
+            <div class="contariner border border-secondary rounded w-25 mx-auto mt-5 pt-1 pl-1 pr-1">
+                <div id="title" class="container-fluid text-white text-center">
+                    <h1>Password Checker</h1>
+                </div> 
+                <div>
+                    <div class="input-group p-3">
+                        <input id="password" type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-btn">
+                            <button id="check" type="submit" name="button" class="btn btn-dark btn-outline-light">
+                                Check</button>
+                        </div>
+                    </div>
+                    <div id="info" class="alert alert-info text-center mx-auto pl-1 pr-1">
+                        <strong>Info!</strong> Type your password in the box above and click "Check"
+                    </div>
+                    <div id="results" class="text-center pb-2 invisible">
+                        <li id="passLength" class="text-white">Length over 10 characters</li>
+                        <li id="passLower" class="text-white">Has a lowercase character</li>
+                        <li id="passUpper" class="text-white">Has an uppercase character</li>
+                        <li id="passNumber" class="text-white">Has a number</li>
+                        <!--li id="passSpecial" class="text-white">Has a special character</li-->
+                    </div>
+                </div>
+            </div>          
+        </main>
+        <script src="script.js" charset="utf-8"></script> 
+    </body>
+</html>
